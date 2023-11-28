@@ -40,3 +40,8 @@ Though my career has taken me from Mexico to the UK, that desire to dig into mul
 
 - Email: aquino@cimat.mx
 - Github: https://github.com/maquinolopez
+
+
+
+
+
