@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research Projects and Software – Marco A. Aquino-López</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container py-5">
+    <header class="text-center mb-4">
+      <h1>Research Projects and Software</h1>
+      <p class="lead">Developed and maintained by Marco Antonio Aquino-López</p>
+      <a href="projects_es.html" class="btn btn-outline-secondary btn-sm">Español</a>
+    </header>
+
+    <section class="mb-5">
+      <h2>🔬 PyPlum</h2>
+      <p><a href="https://github.com/maquinolopez/PyPlum" target="_blank">GitHub Repository</a></p>
+      <p>PyPlum is a comprehensive Python implementation of the Plum model, which generates age-depth models using <sup>210</sup>Pb data through the autoregressive gamma process, as introduced by Blaauw & Christen (2011). This implementation, based on Aquino-López et al. (2018), extends the model by allowing integration of radiocarbon and calendar dates for more robust age-depth inference.</p>
+      <p><strong>Citation:</strong> Aquino-López et al., 2018</p>
+    </section>
+
+    <section class="mb-5">
+      <h2>🍪 BISCUIT</h2>
+      <p><a href="https://github.com/maquinolopez/Biscuit" target="_blank">GitHub Repository</a></p>
+      <p>BISCUIT (Bayesian Integration of Sequences Using Chronology Intersection Tie-points) is an R package that enables probabilistic alignment of an input paleoclimate record with a target record that has known chronological control points. It combines:</p>
+      <ul>
+        <li>Posterior age distributions at tie-point depths in the target record</li>
+        <li>Prior knowledge of sediment accumulation and memory</li>
+      </ul>
+      <p>This results in a fully Bayesian age-depth model for the input sequence.</p>
+    </section>
+
+    <section class="mb-5">
+      <h2>🧪 TACO</h2>
+      <p><a href="https://github.com/maquinolopez/TACO" target="_blank">GitHub Repository</a></p>
+      <p>TACO (Transitional Analysis through Clymo Optimization) introduces a novel Bayesian framework to understand complex carbon dynamics in peatland ecosystems. Extending the classic Clymo model, it supports:</p>
+      <ul>
+        <li>Smooth transitions between carbon states</li>
+        <li>Variable carbon influx modeling</li>
+        <li>Inference on deep-layer decomposition processes</li>
+      </ul>
+      <p>TACO provides a nuanced and flexible modeling tool for biogeochemical dynamics.</p>
+    </section>
+
+    <section class="mb-5">
+      <h2>🌋 Plum (Beta Version)</h2>
+      <p><a href="https://github.com/maquinolopez/Plum" target="_blank">GitHub Repository</a></p>
+      <p>This is a beta implementation of the <strong>Plum</strong> model described in Aquino-López et al. (2018), written in R and reliant on Python 2.7 through <code>rPython</code>. Plum constructs Bayesian age-depth models for <sup>210</sup>Pb data and is designed for use on Unix-based systems (Linux/macOS).</p>
+      <p><strong>Note:</strong> For the official version, refer to <a href="https://cran.r-project.org/package=rplum" target="_blank">rplum on CRAN</a>.</p>
+    </section>
+
+    <footer class="text-center text-muted mt-5">
+      <hr />
+      <p>© 2025 Marco Antonio Aquino-López | <a href="index.html">Back to Home</a></p>
+    </footer>
+  </div>
+</body>
+</html>
+
