@@ -2,52 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Marco Antonio Aquino-López</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="assets/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marco A. Aquino-López</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .profile-img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #ccc;
+      margin-bottom: 1rem;
+    }
+    .sidebar-img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .caption {
+      font-size: 0.9rem;
+      color: #6c757d;
+      font-style: italic;
+      margin-top: 0.3rem;
+      margin-bottom: 1.5rem;
+    }
+  </style>
 </head>
 <body>
   <div class="container py-5">
-    <header class="mb-4 text-center">
-      <h1>Marco Antonio Aquino-López</h1>
-      <p class="lead">Statistical Researcher | Bayesian Methods | Paleoclimate Analysis</p>
-      <a href="index_es.html" class="btn btn-outline-secondary btn-sm">Español</a>
+    
+    <!-- HEADER (Full-width and centered) -->
+    <header class="text-center mb-5">
+      <img src="assets/img/me_newer.jpg" alt="Marco A. Aquino-López" class="profile-img" />
+      <h1 class="fw-bold">Marco A. Aquino-López</h1>
+      <p class="lead">Statistical researcher focused on Bayesian methods and paleoclimate modeling</p>
+      <p>
+        📧 <a href="mailto:aquino@cimat.mx">aquino@cimat.mx</a> |
+        🔗 <a href="https://orcid.org/0000-0002-5076-7205" target="_blank">ORCID</a> |
+        <a href="index_es.html" class="btn btn-sm btn-outline-secondary">Español</a>
+      </p>
+      <div class="text-center mt-3">
+        <a href="cv.html" class="btn btn-primary m-2">📄 Online CV</a>
+        <a href="projects.html" class="btn btn-outline-primary m-2">💻 Projects & Software</a>
+      </div>
     </header>
 
-    <section class="mb-5">
-      <h2>About Me</h2>
-      <p>
-<p>
-  Originally from Oaxaca, Mexico, I am a statistician passionate about solving complex quantitative problems. My academic background spans mathematics and statistics, culminating in a PhD from Queen's University Belfast, where I developed Bayesian statistical methods for age-depth modeling of paleoclimate records, with a particular focus on radiocarbon and lead-210 dating.
-</p>
-<p>
-  My research centers on improving uncertainty quantification in paleoenvironmental reconstructions and chronological alignment. I have held research positions at the University of Cambridge, Queen’s University Belfast, and Maynooth University, and I am currently an Associate Researcher at CIMAT in Guanajuato, Mexico.
-</p>
-<p>
-  I actively contribute to the development of open-source statistical tools and collaborate across disciplines—bridging environmental science, Bayesian modeling, and computational statistics. 
-</p>
-      </p>
-    </section>
+    <!-- MAIN CONTENT: Two Columns -->
+    <div class="row">
+      <!-- LEFT: About Me -->
+      <div class="col-lg-8">
+        <section class="mt-3">
+          <h2>About Me</h2>
+          <p>
+	<p>
+	  I'm a researcher in applied statistics originally from Oaxaca, Mexico. While I specialize in Bayesian methods with applications in paleoclimatology, age-depth modeling, and uncertainty quantification, my interests span a much broader range.
+	</p>
+	<p>
+	  I am currently an Associate Researcher at CIMAT, Mexico, and have previously worked at the University of Cambridge, Queen’s University Belfast, and other institutions. Throughout my career, I have collaborated on diverse research problems — from understanding sediment chronologies and climate signals to modeling linguistic change at Maynooth University and analyzing political behavior in partnership with the University of Guanajuato.
+	</p>
+	<p>
+	  My core motivation lies in using statistical methods to gain insight into complex phenomena — regardless of the field. I’m particularly drawn to problems where uncertainty matters and where careful modeling can uncover hidden structure or patterns in the data.
+	</p>
+	<p>
+	  I develop open-source statistical software in R and Python and enjoy working with interdisciplinary teams tackling questions in earth science, linguistics, political science, and beyond.
+	</p>
 
-    <section class="mb-5">
-      <h2>CV & Projects</h2>
-      <ul>
-        <li><a href="cv.html">Online CV</a></li>
-        <li><a href="projects.html">Research Projects and Software</a></li>
-        <li><a href="https://orcid.org/0000-0002-5076-7205" target="_blank">ORCID Profile</a></li>
-      </ul>
-    </section>
+          </p>
+        </section>
+      </div>
 
-    <section class="mb-5">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:aquino@cimat.mx">aquino@cimat.mx</a><br>
-         GitHub: <a href="https://github.com/maquinolopez" target="_blank">maquinolopez</a></p>
-    </section>
+      <!-- RIGHT: Images with captions -->
+      <div class="col-lg-4">
+        <div class="mb-4 text-center">
+          <img src="assets/img/PaleoStats2022.png" alt="First PaleoStats 2022" class="sidebar-img" />
+          <div class="caption">📸 First PaleoStats workshop at the Institute of Marine and Limnological Sciences, UNAM (Mexico, 2022)</div>
+        </div>
 
-    <footer class="text-center text-muted">
-      <hr>
-      <p>© 2025 Marco Antonio Aquino-López</p>
+        <div class="mb-4 text-center">
+          <img src="assets/img/PaleoStats2024.JPG" alt="PaleoStats Workshop 2024" class="sidebar-img" />
+          <div class="caption">📸 Second PaleoStats edition at Robinson College, University of Cambridge (UK, 2024)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center mt-5 text-muted">
+      <hr />
+      <p>© 2025 Marco Antonio Aquino-López | <a href="https://github.com/maquinolopez">GitHub</a></p>
     </footer>
   </div>
 </body>
