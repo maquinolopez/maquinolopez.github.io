@@ -1,77 +1,251 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Proyectos de Investigación y Software – Marco A. Aquino-López</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+
+  <title>
+    Proyectos de investigación y software – Marco A. Aquino-López
+  </title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet" />
   <link rel="stylesheet" href="assets/style.css">
 </head>
+
 <body>
   <div class="container py-5">
+
+    <!-- ENCABEZADO -->
     <header class="text-center mb-4">
-      <h1>Proyectos de Investigación y Software</h1>
-      <p class="lead">Desarrollados por Marco Antonio Aquino-López</p>
-      <a href="projects.html" class="btn btn-outline-secondary btn-sm">English</a>
+
+      <h1>Proyectos de investigación y software</h1>
+
+      <p class="lead">
+        Software estadístico y proyectos de investigación
+        en los que participo
+      </p>
+
+      <a href="index_es.html"
+         class="btn btn-outline-primary btn-sm m-1">
+        Inicio
+      </a>
+
+      <a href="cv_es.html"
+         class="btn btn-outline-primary btn-sm m-1">
+        CV en línea
+      </a>
+
+      <a href="projects.html"
+         class="btn btn-outline-secondary btn-sm m-1">
+        English
+      </a>
+
     </header>
 
+    <!-- RPLUM -->
     <section class="mb-5">
-      <h2>🌰 PyPlum</h2>
-      <p><a href="https://github.com/maquinolopez/PyPlum" target="_blank">Repositorio en GitHub</a></p>
-      <p>PyPlum es una implementación completa en Python del modelo Plum, que genera modelos edad-profundidad usando datos de <sup>210</sup>Pb mediante un proceso gamma autorregresivo, como se propone en Blaauw y Christen (2011). Esta implementación, basada en Aquino-López et al. (2018), extiende los modelos para integrar fechas de radiocarbono y calendario.</p>
-      <p><strong>Cita:</strong> Aquino-López et al., 2018</p>
-    </section>
-    
-    <section class="mb-5">
-	  <h2>🧭 BSync</h2>
-	  <p><a href="https://github.com/maquinolopez/BSync" target="_blank">Repositorio en GitHub</a></p>
-	  <p>
-	    BSync es una implementación en R de código abierto del marco bayesiano de sincronización descrito en nuestro próximo artículo <em>Bayesian Synchronization of Proxy Paleorecords with Reference Chronologies</em>.
-	    El método alinea un registro proxy sin fechar (o con fechas imprecisas) con uno o más registros de referencia bien datados, propagando completamente la incertidumbre en la alineación.
-	  </p>
-	  <p>BSync permite:</p>
-	  <ul>
-	    <li>Sincronización con un solo objetivo</li>
-	    <li>Sincronización con doble objetivo</li>
-	    <li>Sincronización con registros que tienen incertidumbre en edad</li>
-	  </ul>
-</section>
+      <h2>rplum</h2>
 
+      <p>
+        <a href="https://cran.r-project.org/package=rplum"
+           target="_blank" rel="noopener noreferrer">
+          Paquete de R en CRAN
+        </a>
+      </p>
 
-    <section class="mb-5">
-      <h2>🍪 BISCUIT</h2>
-      <p><a href="https://github.com/maquinolopez/Biscuit" target="_blank">Repositorio en GitHub</a></p>
-      <p>BISCUIT (Integración Bayesiana de Secuencias Usando Puntos de Unión Cronológica) es un paquete en R que permite alinear cronológicamente un registro paleoclimático de entrada con otro de referencia que tiene puntos de control de edad conocidos. El modelo combina:</p>
-      <ul>
-        <li>Distribuciones posteriores de edad en los puntos de unión del registro objetivo</li>
-        <li>Información previa sobre tasas de acumulación y memoria sedimentaria</li>
-      </ul>
-      <p>El resultado es un modelo edad-profundidad bayesiano calibrado al registro objetivo.</p>
-    </section>
+      <p>
+        rplum implementa en R el modelo bayesiano de
+        edad-profundidad para <sup>210</sup>Pb de
+        Aquino-López et al. (2018).
+        Estima cronologías sedimentarias y su incertidumbre
+        a partir de mediciones de <sup>210</sup>Pb y permite
+        integrar fechamientos de radiocarbono y fechas
+        de calendario.
+        El paquete se desarrolló en colaboración con
+        Maarten Blaauw, J. Andrés Christen,
+        Judith Esquivel-Vázquez y Oscar M. Gonzalez V.
+      </p>
 
-    <section class="mb-5">
-      <h2>🌮 TACO</h2>
-      <p><a href="https://github.com/maquinolopez/TACO" target="_blank">Repositorio en GitHub</a></p>
-      <p>TACO (Análisis Transicional mediante Optimización de Clymo) presenta un nuevo enfoque bayesiano para estudiar las dinámicas del carbono en ecosistemas de turberas. Extiende el modelo clásico de Clymo y permite:</p>
-      <ul>
-        <li>Transiciones suaves entre estados ecológicos</li>
-        <li>Modelado de flujos variables de carbono</li>
-        <li>Análisis en profundidad de procesos de descomposición</li>
-      </ul>
-      <p>TACO proporciona una herramienta flexible y avanzada para el modelado biogeoquímico.</p>
+      <p>
+        <strong>Referencia:</strong>
+        <a href="https://doi.org/10.1007/s13253-018-0328-7"
+           target="_blank" rel="noopener noreferrer">
+          Aquino-López et al. (2018)
+        </a>.
+      </p>
     </section>
 
+    <!-- BSYNC -->
     <section class="mb-5">
-      <h2>🌰 Plum (Versión Beta)</h2>
-      <p><a href="https://github.com/maquinolopez/Plum" target="_blank">Repositorio en GitHub</a></p>
-      <p>Esta es una versión beta del modelo <strong>Plum</strong> descrito en Aquino-López et al. (2018), implementado en R y utilizando Python 2.7 mediante <code>rPython</code>. El modelo construye curvas edad-profundidad bayesianas para datos de <sup>210</sup>Pb y está diseñado para sistemas Unix (Linux/macOS).</p>
-      <p><strong>Nota:</strong> Para la versión oficial, consulta <a href="https://cran.r-project.org/package=rplum" target="_blank">rplum en CRAN</a>.</p>
+      <h2>BSync</h2>
+
+      <p>
+        <a href="https://github.com/maquinolopez/BSync"
+           target="_blank" rel="noopener noreferrer">
+          Repositorio en GitHub
+        </a>
+      </p>
+
+      <p>
+        BSync es una implementación en R del método de
+        sincronización bayesiana de Aquino-López,
+        Muschitiello y Osman (2026).
+        Estima una transformación monótona de la escala
+        de profundidad o edad preliminar de un registro
+        proxy a la escala cronológica de un registro
+        de referencia.
+        La distribución posterior cuantifica la
+        incertidumbre de la sincronización y de la
+        cronología resultante.
+      </p>
+
+      <p>
+        El modelo permite sincronizar un registro
+        con una referencia, con una combinación de dos
+        registros de referencia o con una referencia
+        cuya cronología tiene incertidumbre.
+      </p>
+
+      <p>
+        <strong>Referencia:</strong>
+        <a href="https://doi.org/10.1002/env.70159"
+           target="_blank" rel="noopener noreferrer">
+          Aquino-López et al. (2026),
+          <em>Environmetrics</em>
+        </a>.
+      </p>
     </section>
 
+    <!-- PYPLUM -->
+    <section class="mb-5">
+      <h2>PyPlum</h2>
+
+      <p>
+        <a href="https://github.com/maquinolopez/PyPlum"
+           target="_blank" rel="noopener noreferrer">
+          Repositorio en GitHub
+        </a>
+      </p>
+
+      <p>
+        PyPlum es una implementación en Python del
+        modelo bayesiano de edad-profundidad para
+        <sup>210</sup>Pb descrito en
+        Aquino-López et al. (2018).
+        Estima cronologías sedimentarias a partir de
+        mediciones de <sup>210</sup>Pb y permite
+        combinarlas con fechamientos de radiocarbono
+        y fechas de calendario.
+        El modelo de acumulación utiliza un proceso
+        gamma autorregresivo.
+      </p>
+
+      <p>
+        <strong>Referencia:</strong>
+        <a href="https://doi.org/10.1007/s13253-018-0328-7"
+           target="_blank" rel="noopener noreferrer">
+          Aquino-López et al. (2018)
+        </a>.
+        La implementación en R está disponible en
+        <a href="https://cran.r-project.org/package=rplum"
+           target="_blank" rel="noopener noreferrer">
+          rplum
+        </a>.
+      </p>
+    </section>
+
+    <!-- BISCUIT -->
+    <section class="mb-5">
+      <h2>BISCUIT</h2>
+
+      <p>
+        <a href="https://github.com/maquinolopez/Biscuit"
+           target="_blank" rel="noopener noreferrer">
+          Repositorio en GitHub
+        </a>
+      </p>
+
+      <p>
+        BISCUIT (Bayesian Integration of Sequences Using
+        Chronology Intersection Tie-points) es una
+        implementación en R que permite construir un
+        modelo de edad-profundidad para un registro
+        paleoclimático utilizando puntos de correspondencia
+        seleccionados con un registro de referencia fechado.
+        Combina las distribuciones posteriores de edad en
+        esos puntos del registro de referencia con
+        información a priori sobre las tasas de acumulación
+        y la memoria sedimentaria.
+        A diferencia de BSync, BISCUIT requiere que el
+        usuario seleccione los puntos de correspondencia.
+      </p>
+    </section>
+
+    <!-- TACO -->
+    <section class="mb-5">
+      <h2>TACO</h2>
+
+      <p>
+        <a href="https://github.com/maquinolopez/TACO"
+           target="_blank" rel="noopener noreferrer">
+          Repositorio en GitHub
+        </a>
+      </p>
+
+      <p>
+        TACO (Transitional Analysis through Clymo Optimization)
+        es una implementación experimental de una extensión
+        bayesiana del modelo de Clymo para estudiar la
+        acumulación y descomposición de carbono en turberas.
+        Permite que el aporte de carbono varíe y utiliza
+        una función de transición ponderada para representar
+        cambios entre distintos regímenes de acumulación
+        y descomposición.
+        El repositorio contiene código de investigación;
+        la documentación y el manuscrito siguen en desarrollo.
+      </p>
+    </section>
+
+    <!-- PLUM BETA -->
+    <section class="mb-5">
+      <h2>Plum (versión beta)</h2>
+
+      <p>
+        <a href="https://github.com/maquinolopez/Plum"
+           target="_blank" rel="noopener noreferrer">
+          Repositorio en GitHub
+        </a>
+      </p>
+
+      <p>
+        Esta es una implementación preliminar en R del
+        modelo bayesiano de edad-profundidad para
+        <sup>210</sup>Pb descrito en
+        Aquino-López et al. (2018).
+        Depende de Python 2.7 mediante
+        <code>rPython</code> y fue diseñada para
+        Linux y macOS.
+        Para la versión oficial en R, consulta
+        <a href="https://cran.r-project.org/package=rplum"
+           target="_blank" rel="noopener noreferrer">
+          rplum en CRAN
+        </a>.
+      </p>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
     <footer class="text-center text-muted mt-5">
       <hr />
-      <p>© 2025 Marco Antonio Aquino-López | <a href="index_es.html">Volver al inicio</a></p>
+      <p>
+        © 2026 Marco Antonio Aquino-López |
+        <a href="index_es.html">Volver al inicio</a>
+      </p>
     </footer>
+
   </div>
 </body>
 </html>
+
